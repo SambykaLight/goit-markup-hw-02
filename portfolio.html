@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="">webstudio</a>
-        <ul>
-          <li><a href="">studio</a></li>
-          <li><a href="">portfolio</a></li>
-          <li><a href="">contacts</a></li>
+  <body class="main">
+    <header class="top">
+      <nav class="top-list">
+        <a href="" class="top-logo">webstudio</a>
+        <ul class="header-list list">
+          <li class="header-list-item"><a href="./index.html" class="list-link-current link">studio</a></li>
+          <li class="header-list-item"><a href=""  class="list-link link">portfolio</a></li>
+          <li class="header-list-item"><a href=""  class="list-link link">contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="tel-list list">
+        <li><a class="tel-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section class="navigation">
-        <h1>projects navigation</h1>
-        <ul class="filters">
-          <li><button type="button" class="filter-list">all</button></li>
-          <li><button type="button" class="filter-list">web-sites</button></li>
-          <li><button type="button" class="filter-list">app</button></li>
-          <li><button type="button" class="filter-list">design</button></li>
-          <li><button type="button" class="filter-list">marketing</button></li>
+      <section class="projects">
+        <h1 class="hide">projects navigation</h1>
+        <ul class="btn-list">
+          <li><button type="button" class="btn-project btn">all</button></li>
+          <li><button type="button" class="btn-project btn">web-sites</button></li>
+          <li><button type="button" class="btn-project btn">app</button></li>
+          <li><button type="button" class="btn-project btn">design</button></li>
+          <li><button type="button" class="btn-project btn">marketing</button></li>
         </ul>
       </section>
-      <section class="portfolio-box">
-        <ul class="portfolio-section">
+      <section class="project-titles">
+        <h2 class="hide">project list</h2>
+        <ul class="titles-list">
           <li>
             <img
               src="./img/technoduck.jpg"
@@ -41,8 +43,8 @@
               width="370"
               height="294"
             />
-            <h3>technoduck</h3>
-            <p>web-site</p>
+            <h3 class="titles-name" >technoduck</h3>
+            <p class="title-about">web-site</p>
           </li>
           <li>
             <img
@@ -51,8 +53,8 @@
               width="370"
               height="294"
             />
-            <h3>poster new orlean vs golden star</h3>
-            <p>design</p>
+            <h3 class="titles-name" >poster new orlean vs golden star</h3>
+            <p class="title-about">design</p>
           </li>
           <li>
             <img
@@ -61,8 +63,8 @@
               width="370"
               height="294"
             />
-            <h3>seafood restaurant</h3>
-            <p>apps</p>
+            <h3 class="titles-name" >seafood restaurant</h3>
+            <p class="title-about">apps</p>
           </li>
           <li>
             <img
@@ -71,8 +73,8 @@
               width="370"
               height="294"
             />
-            <h3>project prime</h3>
-            <p>marketing</p>
+            <h3 class="titles-name" >project prime</h3>
+            <p class="title-about">marketing</p>
           </li>
           <li>
             <img
@@ -81,8 +83,8 @@
               width="370"
               height="294"
             />
-            <h3>project boxes</h3>
-            <p>apps</p>
+            <h3 class="titles-name" >project boxes</h3>
+            <p class="title-about">apps</p>
           </li>
           <li>
             <img
@@ -91,8 +93,8 @@
               width="370"
               height="294"
             />
-            <h3>inspiration has no borders</h3>
-            <p>web-site</p>
+            <h3 class="titles-name" >inspiration has no borders</h3>
+            <p class="title-about">web-site</p>
           </li>
           <li>
             <img
@@ -101,8 +103,8 @@
               width="370"
               height="294"
             />
-            <h3>limited edition</h3>
-            <p>design</p>
+            <h3 class="titles-name" >limited edition</h3>
+            <p class="title-about">design</p>
           </li>
           <li>
             <img
@@ -111,8 +113,8 @@
               width="370"
               height="294"
             />
-            <h3>project lab</h3>
-            <p>marketing</p>
+            <h3 class="titles-name" >project lab</h3>
+            <p class="title-about">marketing</p>
           </li>
           <li>
             <img
@@ -121,18 +123,18 @@
               width="370"
               height="294"
             />
-            <h3>growing business</h3>
-            <p>apps</p>
+            <h3 class="titles-name" >growing business</h3>
+            <p class="title-about">apps</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">WebStudio</a>
+    <footer class="address">
+      <a href="" class="top-logo">WebStudio</a>
       <address>
-        <ul>
+        <ul class="adress-list list">
           <li>
-            <a
+            <a class="adress-location"
               href="https://goo.gl/maps/FJmEgPevWycDGYRN7"
               target="_blank"
               rel="noopener
@@ -141,8 +143,8 @@
               >695 Park Ave, New York, NY 10065, United States</a
             >
           </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+12127724150">+1 212-772-4150</a></li>
+          <li><a  class="tel-link link" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a  class="tel-link link" href="tel:+12127724150">+1 212-772-4150</a></li>
         </ul>
       </address>
     </footer>
