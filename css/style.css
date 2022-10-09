@@ -10,7 +10,7 @@
 }
 
 .main {
-  background-color: var(--main-background-color);
+  background-color: var(--primery-text-color);
 }
 
 .top-logo {
@@ -20,6 +20,8 @@
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--link-color);
+  font-family: "Raleway";
+  text-decoration: none;
 }
 .top-logo:hover,
 .top-logo:focus {
@@ -30,7 +32,7 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  background-color: var(--main-background-color);
+  background-color: var(--primery-text-color);
 }
 
 .button {
@@ -44,20 +46,43 @@
 }
 
 .list-link {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  list-style-type: none;
+}
+.list-link:visited {
+  color: var(--title-text-color);
 }
 
-.linlk {
+.link {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
+.list-link-current {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--link-color);
+}
+
+.link-current,
 .link:hover,
-.link:focus,
-.link-current {
+.link:focus {
   color: var(--link-color);
 }
 
@@ -66,6 +91,7 @@
 }
 
 .tel-link {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -91,6 +117,7 @@
 }
 
 .hero-btn {
+  font-family: "Roboto",sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -102,15 +129,31 @@
   background: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.hero-btn:hover,
+.hero-btn:hover {
+  color: var(--primery-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .hero-btn:focus {
   color: var(--link-color);
+  background: var(--link-color);
 }
 
-.hide {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* about  */
@@ -120,6 +163,7 @@
 }
 
 .about-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -129,6 +173,7 @@
 }
 
 .about-text {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -140,6 +185,7 @@
 }
 
 .content-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -169,6 +215,7 @@
 }
 
 .team-names {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -178,6 +225,8 @@
 }
 
 .team-position {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -187,15 +236,21 @@
 
 /* footer  */
 
+.address-box {
+  font-style: normal;
+}
+
 .address {
   background-color: var(--line-background);
 }
 
 .address-location {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  text-decoration: none;
 }
 
 .address-location:hover,
@@ -207,17 +262,25 @@
 
 /* buttons */
 
+.btn {
+  font-family: "roboto", sans-serif;
+}
+
 .btn-list {
   list-style: none;
 }
 
 .btn-project {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  cursor: pointer;
+  background: var(--button-color);
+  border-radius: 4px;
 }
 
 .btn-project:hover,
@@ -233,6 +296,7 @@
 }
 
 .titles-name {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -241,6 +305,7 @@
 }
 
 .title-about {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
