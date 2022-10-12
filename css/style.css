@@ -204,6 +204,10 @@
   background-color: var(--button-color);
 }
 
+.team-box{
+  background-color: #fff;
+}
+
 .team-about {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -293,6 +297,10 @@
 
 .titles-list {
   list-style: none;
+}
+
+.title-box{
+  background-color: #fff;
 }
 
 .titles-name {
